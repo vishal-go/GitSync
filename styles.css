@@ -1,8 +1,46 @@
-/*
+/* GitSync Plugin Styles */
 
-This CSS file will be included with your plugin, and
-available in the app when your plugin is enabled.
+.gitsync-buttons .setting-item {
+	border-top: none;
+	padding-top: 8px;
+}
 
-If your plugin does not need CSS, delete this file.
+.gitsync-buttons .setting-item:first-child {
+	padding-top: 0;
+}
 
-*/
+/* Status indicator styling */
+.gitsync-status {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	padding: 8px 12px;
+	border-radius: 6px;
+	background-color: var(--background-secondary);
+	margin-bottom: 12px;
+}
+
+.gitsync-status.syncing {
+	background-color: var(--background-modifier-message);
+}
+
+.gitsync-status.success {
+	background-color: var(--background-modifier-success);
+}
+
+.gitsync-status.error {
+	background-color: var(--background-modifier-error);
+}
+
+/* Settings section headers */
+.gitsync-settings h2 {
+	margin-top: 24px;
+	margin-bottom: 12px;
+	border-bottom: 1px solid var(--background-modifier-border);
+	padding-bottom: 6px;
+}
+
+/* Token input masking */
+.gitsync-token-input {
+	font-family: monospace;
+}
