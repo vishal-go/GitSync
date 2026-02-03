@@ -68,7 +68,7 @@ export class GitSyncSettingTab extends PluginSettingTab {
 			.setName('Branch name')
 			.setDesc('The Git branch to use for syncing.')
 			.addText(text => text
-				.setPlaceholder('main')
+				.setPlaceholder('Main')
 				.setValue(this.plugin.settings.branch)
 				.onChange(async (value) => {
 					this.plugin.settings.branch = value.trim() || 'main';
@@ -167,7 +167,7 @@ export class GitSyncSettingTab extends PluginSettingTab {
 			.setDesc('File names or patterns to exclude, one per line.')
 			.addTextArea(text => {
 				text
-					.setPlaceholder('file1.txt\nfile2.txt')
+					.setPlaceholder('Example.txt')
 					.setValue(this.plugin.settings.excludedFiles.join('\n'))
 					.onChange(async (value) => {
 						this.plugin.settings.excludedFiles = value
