@@ -68,7 +68,6 @@ export class GitSyncSettingTab extends PluginSettingTab {
 			.setName('Branch name')
 			.setDesc('The Git branch to use for syncing.')
 			.addText(text => text
-				// eslint-disable-next-line obsidianmd/ui/sentence-case
 				.setPlaceholder('main')
 				.setValue(this.plugin.settings.branch)
 				.onChange(async (value) => {
@@ -168,7 +167,6 @@ export class GitSyncSettingTab extends PluginSettingTab {
 			.setDesc('File names or patterns to exclude, one per line.')
 			.addTextArea(text => {
 				text
-					// eslint-disable-next-line obsidianmd/ui/sentence-case
 					.setPlaceholder('file1.txt\nfile2.txt')
 					.setValue(this.plugin.settings.excludedFiles.join('\n'))
 					.onChange(async (value) => {
